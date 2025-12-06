@@ -20,7 +20,7 @@ spec:
 
       containers:
         - name: backend
-          image: 123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/backend:latest
+          image: docker.io/ytjdud79/backend:latest
           imagePullPolicy: Always
 
           ports:
