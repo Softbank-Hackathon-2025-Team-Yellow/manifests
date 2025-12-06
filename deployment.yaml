@@ -20,7 +20,7 @@ spec:
 
       containers:
         - name: backend
-          image: docker.io/ytjdud79/backend:latest
+          image: docker.io/ytjdud79/backend:9f75e4b
           imagePullPolicy: Always
 
           ports:
