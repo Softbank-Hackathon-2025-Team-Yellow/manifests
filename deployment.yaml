@@ -26,6 +26,12 @@ spec:
           ports:
             - containerPort: 8000
 
+          # ✅ Secret 전체를 환경변수로 주입
+          envFrom:
+            - secretRef:
+                name: backend-secrets
+
+          # (선택) 일반 env는 그대로 둬도 됨
           env:
             - name: ENV
               value: "dev"
@@ -37,4 +43,3 @@ spec:
             limits:
               cpu: "500m"
               memory: "512Mi"
-
